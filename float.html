@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Float pravilo</title>
+    <style>
+        img {
+            width: 400px;
+            height: auto;
+        }
+        img:nth-child(1) {
+            float: left;
+        }
+        img:nth-child(2) {
+            float: right;
+        }
+        section::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    
+    <section>
+        <img src="img1.jpg" alt="slika1">
+        <img src="img2.jpg" alt="slika 2">
+    </section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam laborum velit hic eaque, sequi inventore molestiae optio saepe explicabo soluta, possimus quo deserunt corporis ut culpa expedita et excepturi, amet tempore totam! Minima, iusto quibusdam tenetur officia consequuntur qui optio.</p>
+    
+</body>
+</html>

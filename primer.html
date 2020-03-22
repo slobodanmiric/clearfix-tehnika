@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Primer</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            text-align: center;
+        }
+        header {
+            background: orangered;
+            color: white;
+            padding: 30px;
+        }
+        .left,
+        .right {
+            width: 20%;
+            float: left;
+            background: lightgray;
+            height: 300px;
+        }
+        .main {
+            background: navy;
+            padding: 30px;
+            float: left;
+            width: 60%;
+            color: white;
+            height: 300px;
+        }
+        footer {
+            background: orangered;
+            color: white;
+            padding: 30px;
+        }
+        main::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h2>Header</h2>
+    </header>
+    
+    <main>
+        <aside class="left">
+        <h2>Levi sidebar</h2>
+        </aside>
+        <section class="main">
+            <h2>Glavni sadrzaj</h2>
+        </section>
+        <aside class="right">
+            <h2>Desni sidebar</h2>
+        </aside>
+    </main>
+
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+    
+</body>
+</html>
